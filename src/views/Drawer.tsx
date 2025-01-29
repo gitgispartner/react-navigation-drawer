@@ -23,6 +23,7 @@ const {
   clockRunning,
   startClock,
   stopClock,
+  // @ts-ignore
   interpolateNode,
   spring,
   abs,
@@ -548,6 +549,7 @@ export default class Drawer extends React.PureComponent<Props> {
                   style={[
                     styles.overlay,
                     {
+                      // @ts-ignore
                       opacity: interpolateNode(this.progress, {
                         inputRange: [PROGRESS_EPSILON, 1],
                         outputRange: [0, 1],
